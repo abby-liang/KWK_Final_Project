@@ -9,23 +9,10 @@ import UIKit
 
 class LogTableViewController: UITableViewController {
     
-    //var toDos : [ToDo] = []
-    
     override func viewDidLoad() {
       super.viewDidLoad()
+        //getReflections()
         
-    }
-    
-    func createReflections() -> [VolunteerLog] {
-
-      let swift = VolunteerLog()
-      swift.name = "Learn Swift"
-      //swift.date = Date()
-
-      let dog = VolunteerLog()
-      dog.name = "Walk the Dog"
-      // important is set to false by default
-      return [swift, dog]
     }
 
     var reflections : [LogCD] = []
@@ -54,15 +41,8 @@ class LogTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-//        let toDo = reflections[indexPath.row]
-//
-//        if let name = toDo.name {
-//        if toDo.important {
-//          cell.textLabel?.text = "❗️" + name
-//        } else {
-//          cell.textLabel?.text = toDo.name
-//        }
-//        }
+        let toDo = reflections[indexPath.row]
+        cell.textLabel?.text = toDo.name
 
         return cell
     }
@@ -71,7 +51,7 @@ class LogTableViewController: UITableViewController {
         getReflections()
     }
 
-/*
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
   // this gives us a single ToDo
@@ -80,7 +60,7 @@ class LogTableViewController: UITableViewController {
         performSegue(withIdentifier: "moveToComplete", sender: reflection)
     }
  
- */
+ 
 
 /*
     // Override to support conditional editing of the table view.
@@ -119,12 +99,12 @@ class LogTableViewController: UITableViewController {
             addVC.previousVC = self
         }
         
-//        if let completeVC = segue.destination as? CompleteToDoViewController{
-//            if let toDo = sender as? LogCD {
-//                completeVC.selectedToDo = toDo
-//                completeVC.previousVC = self
-//            }
-//        }
+        if let completeVC = segue.destination as? ReflectionViewController{
+            if let toDo = sender as? LogCD {
+                completeVC.selectedReflection = toDo
+                completeVC.previousVC = self
+            }
+        }
         
     }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284376F324BE545E00AC1EAE /* ReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284376F224BE545E00AC1EAE /* ReflectionViewController.swift */; };
 		284D358A24BE3B7200F15E08 /* VolunteerLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358924BE3B7200F15E08 /* VolunteerLog.swift */; };
 		284D358C24BE3C0C00F15E08 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */; };
 		284D358E24BE3ED300F15E08 /* AddReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284376F224BE545E00AC1EAE /* ReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionViewController.swift; sourceTree = "<group>"; };
 		284D358924BE3B7200F15E08 /* VolunteerLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLog.swift; sourceTree = "<group>"; };
 		284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 		284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReflectionViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				EC048FD424BCE6C900CF6C83 /* Info.plist */,
 				EC048FCC24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld */,
 				284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */,
+				284376F224BE545E00AC1EAE /* ReflectionViewController.swift */,
 			);
 			path = KWK_Final_Project;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				4C33057324BE2F5A00036379 /* ProfileViewController.swift in Sources */,
 				EC048FC824BCE6B700CF6C83 /* ViewController.swift in Sources */,
+				284376F324BE545E00AC1EAE /* ReflectionViewController.swift in Sources */,
 				EC048FC424BCE6B700CF6C83 /* AppDelegate.swift in Sources */,
 				284D358C24BE3C0C00F15E08 /* LogTableViewController.swift in Sources */,
 				EC048FCE24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld in Sources */,
