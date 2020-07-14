@@ -13,8 +13,6 @@ class LogTableViewController: UITableViewController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
-
-      //toDos = createToDos()
         
     }
     
@@ -37,9 +35,8 @@ class LogTableViewController: UITableViewController {
             
             if let coreDataReflections = try?context.fetch(LogCD.fetchRequest()) as? [LogCD] {
                 
-//                if let theToDos = coreDataToDos {
-                    reflections = coreDataReflections
-                    tableView.reloadData()
+                reflections = coreDataReflections
+                tableView.reloadData()
                 
             }
             
@@ -54,9 +51,9 @@ class LogTableViewController: UITableViewController {
         return reflections.count
     }
 
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-//
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
 //        let toDo = reflections[indexPath.row]
 //
 //        if let name = toDo.name {
@@ -66,14 +63,15 @@ class LogTableViewController: UITableViewController {
 //          cell.textLabel?.text = toDo.name
 //        }
 //        }
-//
-//        return cell
-//    }
+
+        return cell
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         getReflections()
     }
-    
+
+/*
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
   // this gives us a single ToDo
@@ -81,6 +79,8 @@ class LogTableViewController: UITableViewController {
 
         performSegue(withIdentifier: "moveToComplete", sender: reflection)
     }
+ 
+ */
 
 /*
     // Override to support conditional editing of the table view.

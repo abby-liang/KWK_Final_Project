@@ -100,9 +100,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add Image"/>
-                                <connections>
-                                    <action selector="image:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJl-U1-FWy"/>
-                                </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="574-0z-pgE">
                                 <rect key="frame" x="-1" y="759" width="414" height="49"/>
@@ -126,9 +123,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add Supervisor Information"/>
-                                <connections>
-                                    <action selector="supervisor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17h-8g-Qqi"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reflection:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io3-ym-Kb6">
                                 <rect key="frame" x="20" y="237" width="82" height="21"/>
@@ -167,7 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Compose" id="bcD-vm-Diz"/>
                     <connections>
-                        <outlet property="name" destination="daS-nl-yjd" id="uJA-GX-UcX"/>
+                        <outlet property="titleTextField" destination="daS-nl-yjd" id="Z1H-wz-9Ex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
