@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284D358A24BE3B7200F15E08 /* VolunteerLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358924BE3B7200F15E08 /* VolunteerLog.swift */; };
+		284D358C24BE3C0C00F15E08 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */; };
+		284D358E24BE3ED300F15E08 /* AddReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */; };
 		4C33057324BE2F5A00036379 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33057224BE2F5A00036379 /* ProfileViewController.swift */; };
 		EC048FC424BCE6B700CF6C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC048FC324BCE6B700CF6C83 /* AppDelegate.swift */; };
 		EC048FC624BCE6B700CF6C83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC048FC524BCE6B700CF6C83 /* SceneDelegate.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284D358924BE3B7200F15E08 /* VolunteerLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLog.swift; sourceTree = "<group>"; };
+		284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
+		284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReflectionViewController.swift; sourceTree = "<group>"; };
 		4C33057224BE2F5A00036379 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC048FC024BCE6B600CF6C83 /* KWK_Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWK_Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC048FC324BCE6B700CF6C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,14 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				EC048FC324BCE6B700CF6C83 /* AppDelegate.swift */,
+				284D358924BE3B7200F15E08 /* VolunteerLog.swift */,
 				EC048FC524BCE6B700CF6C83 /* SceneDelegate.swift */,
 				EC048FC724BCE6B700CF6C83 /* ViewController.swift */,
 				4C33057224BE2F5A00036379 /* ProfileViewController.swift */,
 				EC048FC924BCE6B700CF6C83 /* Main.storyboard */,
+				284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */,
 				EC048FCF24BCE6C900CF6C83 /* Assets.xcassets */,
 				EC048FD124BCE6C900CF6C83 /* LaunchScreen.storyboard */,
 				EC048FD424BCE6C900CF6C83 /* Info.plist */,
 				EC048FCC24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld */,
+				284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */,
 			);
 			path = KWK_Final_Project;
 			sourceTree = "<group>";
@@ -147,8 +156,11 @@
 				4C33057324BE2F5A00036379 /* ProfileViewController.swift in Sources */,
 				EC048FC824BCE6B700CF6C83 /* ViewController.swift in Sources */,
 				EC048FC424BCE6B700CF6C83 /* AppDelegate.swift in Sources */,
+				284D358C24BE3C0C00F15E08 /* LogTableViewController.swift in Sources */,
 				EC048FCE24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld in Sources */,
+				284D358E24BE3ED300F15E08 /* AddReflectionViewController.swift in Sources */,
 				EC048FC624BCE6B700CF6C83 /* SceneDelegate.swift in Sources */,
+				284D358A24BE3B7200F15E08 /* VolunteerLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
