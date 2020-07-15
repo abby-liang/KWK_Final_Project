@@ -15,26 +15,12 @@ class AddReflectionViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     
     @IBAction func addTapped(_ sender: Any) {
-//        let newReflection = VolunteerLog()
-//
-//        if let reflectionTitle = name.text {
-//          newReflection.name = reflectionTitle
-//          //reflection.important = importantSwitch.isOn
-//        }
         
-//        previousVC.reflections.append(newReflection)
-//        previousVC.tableView.reloadData()
-//        previousVC.reflections.append(newReflection)
-        
-        // we have to grab this view context to be able to work with Core Data
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
 
-          // we are creating a new ToDoCD object here, naming it toDo
             let newReflection = LogCD(entity: LogCD.entity(), insertInto: context)
             
-          // if the titleTextField has text, we will call that text titleText
           if let reflectionTitle = titleTextField.text {
-              // we will take the titleText and assign that value to toDo.name
               newReflection.name = reflectionTitle
             
           }
@@ -45,8 +31,43 @@ class AddReflectionViewController: UIViewController {
     }
     }
     
+    @IBOutlet weak var dateTxt: UITextField!
+    let datePicker = UIDatePicker()
+    
+    func createDatePicker() {
+        dateTxt.textAlignment = .center
+        //toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar button
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        toolbar.setItems([doneBtn], animated: true)
+        
+        //assign toolbar
+        dateTxt.inputAccessoryView = toolbar
+        
+        //datepicker to text field
+        dateTxt.inputView = datePicker
+        
+        //datepicker mode
+        datePicker.datePickerMode = .date
+        
+    }
+    
+    @objc func donePressed() {
+        //formatter
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        
+        dateTxt.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        createDatePicker()
     }
     /*
     // MARK: - Navigation
