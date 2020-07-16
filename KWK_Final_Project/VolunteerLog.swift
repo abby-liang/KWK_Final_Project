@@ -10,5 +10,7 @@ import UIKit
 
 class VolunteerLog {
     var name = ""
+    var reflection = ""
+    var date = ""
     //var date = Date()
 }

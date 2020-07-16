@@ -13,23 +13,9 @@ class AddReflectionViewController: UIViewController {
     var previousVC = LogTableViewController()
    
     @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var reflectionTextField: UITextField!
+    @IBOutlet weak var hoursField: UITextField!
     
-    @IBAction func addTapped(_ sender: Any) {
-        
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-
-            let newReflection = LogCD(entity: LogCD.entity(), insertInto: context)
-            
-          if let reflectionTitle = titleTextField.text {
-              newReflection.name = reflectionTitle
-            
-          }
-
-          try? context.save()
-          navigationController?.popViewController(animated: true)
-        
-    }
-    }
     
     @IBOutlet weak var dateTxt: UITextField!
     let datePicker = UIDatePicker()
@@ -65,6 +51,24 @@ class AddReflectionViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func addTapped(_ sender: Any) {
+        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+
+            let newReflection = LogCD(entity: LogCD.entity(), insertInto: context)
+            
+            if let reflectionTitle = titleTextField.text, let reflectionText = reflectionTextField.text, let dateText = dateTxt.text, let hoursText = hoursField.text {
+              newReflection.name = reflectionTitle
+                newReflection.reflection = reflectionText
+                newReflection.date = dateText
+                newReflection.hours = hoursText
+          }
+
+          try? context.save()
+          navigationController?.popViewController(animated: true)
+        
+    }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         createDatePicker()

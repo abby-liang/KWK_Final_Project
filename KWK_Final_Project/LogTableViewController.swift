@@ -11,7 +11,6 @@ class LogTableViewController: UITableViewController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
-        //getReflections()
         
     }
 

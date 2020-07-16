@@ -14,6 +14,10 @@ class ReflectionViewController: UIViewController {
     var selectedReflection : LogCD?
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var reflectionLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var hoursLabel: UILabel!
     
     @IBAction func completeTapped(_ sender: Any) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
@@ -29,6 +33,10 @@ class ReflectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = selectedReflection?.name
+        reflectionLabel.text = selectedReflection?.reflection
+        dateLabel.text = selectedReflection?.date
+        hoursLabel.text = "\(String(describing: selectedReflection?.hours)) hours"
+        
         // Do any additional setup after loading the view.
     }
     

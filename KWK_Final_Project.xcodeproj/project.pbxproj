@@ -76,12 +76,12 @@
 				EC048FC724BCE6B700CF6C83 /* ViewController.swift */,
 				4C33057224BE2F5A00036379 /* ProfileViewController.swift */,
 				EC048FC924BCE6B700CF6C83 /* Main.storyboard */,
-				284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */,
 				EC048FCF24BCE6C900CF6C83 /* Assets.xcassets */,
 				EC048FD124BCE6C900CF6C83 /* LaunchScreen.storyboard */,
 				EC048FD424BCE6C900CF6C83 /* Info.plist */,
 				EC048FCC24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld */,
 				284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */,
+				284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */,
 				284376F224BE545E00AC1EAE /* ReflectionViewController.swift */,
 				4C72DF6424C0AC8F0072938F /* Launch Screen.storyboard */,
 			);
