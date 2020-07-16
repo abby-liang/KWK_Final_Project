@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameText: UILabel!
+    var finalName = ""
+    
+    @IBOutlet weak var goalName: UILabel!
+    var finalGoal = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nameText.text = "👋🏼 Welcome, \(finalName)!"
+        goalName.text = "Your volunteer goal is \(finalGoal) hours."
     }
 
 

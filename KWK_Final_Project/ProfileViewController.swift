@@ -10,11 +10,23 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    @IBAction func DoneButton(_ sender: UIButton) {
-    }
+    @IBOutlet weak var textField: UITextField!
+    var nameText = ""
 
-    
     @IBOutlet weak var goal: UITextField!
+    var goalText = ""
+    
+    @IBAction func done(_ sender: Any) {
+        self.nameText = textField.text!
+        self.goalText = goal.text!
+        performSegue(withIdentifier: "transfer", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ViewController
+        vc.finalName = self.nameText
+        vc.finalGoal = self.goalText
+    }
     
     @IBOutlet weak var name: UITextField!
     override func viewDidLoad() {

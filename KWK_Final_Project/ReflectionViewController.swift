@@ -35,7 +35,7 @@ class ReflectionViewController: UIViewController {
         titleLabel.text = selectedReflection?.name
         reflectionLabel.text = selectedReflection?.reflection
         dateLabel.text = selectedReflection?.date
-        hoursLabel.text = "\(String(describing: selectedReflection?.hours)) hours"
+        hoursLabel.text = selectedReflection?.hours
         
         // Do any additional setup after loading the view.
     }

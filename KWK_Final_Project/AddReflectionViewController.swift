@@ -61,7 +61,7 @@ class AddReflectionViewController: UIViewController {
               newReflection.name = reflectionTitle
                 newReflection.reflection = reflectionText
                 newReflection.date = dateText
-                newReflection.hours = hoursText
+                newReflection.hours = hoursText + " hours"
           }
 
           try? context.save()
