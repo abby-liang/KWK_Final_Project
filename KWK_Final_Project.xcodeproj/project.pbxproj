@@ -12,6 +12,7 @@
 		284D358C24BE3C0C00F15E08 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */; };
 		284D358E24BE3ED300F15E08 /* AddReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */; };
 		4C33057324BE2F5A00036379 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33057224BE2F5A00036379 /* ProfileViewController.swift */; };
+		4C72DF6524C0AC8F0072938F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C72DF6424C0AC8F0072938F /* Launch Screen.storyboard */; };
 		EC048FC424BCE6B700CF6C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC048FC324BCE6B700CF6C83 /* AppDelegate.swift */; };
 		EC048FC624BCE6B700CF6C83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC048FC524BCE6B700CF6C83 /* SceneDelegate.swift */; };
 		EC048FC824BCE6B700CF6C83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC048FC724BCE6B700CF6C83 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
 		284D358D24BE3ED300F15E08 /* AddReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReflectionViewController.swift; sourceTree = "<group>"; };
 		4C33057224BE2F5A00036379 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C72DF6424C0AC8F0072938F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EC048FC024BCE6B600CF6C83 /* KWK_Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWK_Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC048FC324BCE6B700CF6C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC048FC524BCE6B700CF6C83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				EC048FCC24BCE6B700CF6C83 /* KWK_Final_Project.xcdatamodeld */,
 				284D358B24BE3C0C00F15E08 /* LogTableViewController.swift */,
 				284376F224BE545E00AC1EAE /* ReflectionViewController.swift */,
+				4C72DF6424C0AC8F0072938F /* Launch Screen.storyboard */,
 			);
 			path = KWK_Final_Project;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				EC048FD324BCE6C900CF6C83 /* LaunchScreen.storyboard in Resources */,
 				EC048FD024BCE6C900CF6C83 /* Assets.xcassets in Resources */,
+				4C72DF6524C0AC8F0072938F /* Launch Screen.storyboard in Resources */,
 				EC048FCB24BCE6B700CF6C83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
